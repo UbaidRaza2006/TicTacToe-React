@@ -24,7 +24,7 @@
     margin-top: 30px;
     z-index: +1;
     box-shadow: 1px 1px 10px 10px rgb(3, 43, 102); 
-    margin-left: 150px ;
+    margin-left: 10% ;
 }
 .board-row{
     /* width: 50%; */
@@ -50,7 +50,8 @@
     position: relative;
     align-items: center;
     box-shadow: 1px 1px 10px 10px rgb(3, 43, 102); 
-padding-left: 25px;
+padding-left: 2%;
+padding-right: 1%;
     bottom: 400px;
     left: 60%;
 }
@@ -59,5 +60,74 @@ padding-left: 25px;
 }
 .li{
     width: 80%;
-height: 50px;
+height: 43px;
 }
+@media screen and (max-width: 1040px) {
+    .board{
+      width: 90%;
+      margin-left: 3%;
+      margin-right: 3%;
+      height: 242px;
+      margin-top: -320px
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .square{
+      /* width: 60%; */
+      /* margin-left: 3%; */
+      height: 80px;
+      font-size: 507%;
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .status{
+      /* width: 60%; */
+      /* margin-left: 3%; */
+      /* height: 66px; */
+      margin-top: 270px;
+      font-size: 200%;
+      width: 90%;
+      height: 50px;
+      margin-left: 3%;
+      margin-right: 3%;
+      
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .game-info{
+   
+     width: 85%;
+     position: absolute;
+     right: 3%;
+     left: 4%;
+     top: 370px;
+      
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .li{
+   
+     width: 90%;
+     height: 35px;
+     /* margin-left: 0; */
+     position: relative; 
+     right:9%;
+     left: -3.5%;
+     top:50%;
+      
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    body{
+   
+    
+     height: 770px;
+     background-color: rgb(1, 21, 51);
+     
+      
+    }
+  }
