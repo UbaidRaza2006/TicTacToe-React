@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Tictactoe.css'
 
 function Square({ value, onSquareClick }) {
   return (
@@ -33,6 +34,7 @@ function Board({ xIsNext, squares, onPlay }) {
   return (
     <>
       <div className="status">{status}</div>
+      <div className='board'>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -47,7 +49,8 @@ function Board({ xIsNext, squares, onPlay }) {
         <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
-      </div>
+
+        </div>      </div>
     </>
   );
 }
@@ -76,8 +79,8 @@ export default function Game() {
       description = 'Go to game start';
     }
     return (
-      <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+      <li key={move} >
+        <button className='li' onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
   });
@@ -88,7 +91,7 @@ export default function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
-        <ol>{moves}</ol>
+        <ol className='ol'>{moves}</ol>
       </div>
     </div>
   );
